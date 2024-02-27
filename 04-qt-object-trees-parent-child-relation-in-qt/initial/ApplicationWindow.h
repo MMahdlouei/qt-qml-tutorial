@@ -7,9 +7,8 @@ class ApplicationWindow : public QObject
 {
     Q_OBJECT
 public:
-    explicit ApplicationWindow(QObject *parent = nullptr, const QString &title);
+    explicit ApplicationWindow(const QString &m_title, QObject *parent = nullptr);
     virtual ~ApplicationWindow();
-
 signals:
 
 private:

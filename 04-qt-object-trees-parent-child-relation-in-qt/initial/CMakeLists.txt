@@ -16,6 +16,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(4-qt-object-trees-parent-child-relation-in-qt
   main.cpp
+  ApplicationWindow.h ApplicationWindow.cpp
 )
 target_link_libraries(4-qt-object-trees-parent-child-relation-in-qt Qt${QT_VERSION_MAJOR}::Core)
 

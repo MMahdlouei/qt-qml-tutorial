@@ -18,3 +18,16 @@ void UserInteractor::getInput()
         emit phraseTyped(phrase);
     }
 }
+
+QString UserInteractor::phrase() const
+{
+    return m_phrase;
+}
+
+void UserInteractor::setPhrase(const QString &newPhrase)
+{
+    if (m_phrase == newPhrase)
+        return;
+    m_phrase = newPhrase;
+    emit phraseChanged();
+}
